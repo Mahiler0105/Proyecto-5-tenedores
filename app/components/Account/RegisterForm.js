@@ -87,7 +87,7 @@ function RegisterForm(props){
                         name={hidePasswordSecond ? 'eye-outline' : 'eye-off-outline'}
                         iconStyle={styles.iconRight}
                         onPress={()=> setHidePasswordSecond(!hidePasswordSecond)}
-                    />
+                    />  
                 }
             
             />

@@ -4,6 +4,7 @@ import { Button } from 'react-native-elements'
 import { withNavigation } from 'react-navigation'
 import Constants from 'expo-constants'
 
+
 function UserGuest(props) {
     const { navigation } = props;
 
@@ -33,7 +34,7 @@ function UserGuest(props) {
                 />
             </View>
         </ScrollView>
-        
+
     )
 }
 export default withNavigation(UserGuest);
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
     viewBody: {
         marginLeft: 30,
         marginRight: 30,
-        
+
     }, image: {
         height: 300,
         width: '100%',

@@ -302,6 +302,7 @@ function Map (props){
                             onPress={()=> setIsVisibleMap(false)}
                             containerStyle={styles.viewMapBtnContainerCancel}
                             buttonStyle={styles.viewMapBtnCancel}
+                            // titleStyle={{fontSize:10}}
                         
                         />
                 </View>
@@ -358,10 +359,13 @@ const styles = StyleSheet.create({
         marginTop:10
     },
     viewMapBtnContainerSave:{
-        paddingRight:5
+        paddingRight:5,
+        fontSize:10
     },
     viewMapBtnSave:{
-        backgroundColor:'#00a680'
+        backgroundColor:'#00a680',
+
+        
     },
     viewMapBtnContainerCancel:{
         paddingLeft:5
@@ -372,6 +376,6 @@ const styles = StyleSheet.create({
     btnAddRestaurant:{
         backgroundColor:'#00a680',
         margin:20
-    }
-
+    },
+    
 })

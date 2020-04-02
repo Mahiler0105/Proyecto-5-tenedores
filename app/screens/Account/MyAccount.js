@@ -7,14 +7,20 @@ import UserGuest from './UserGuest'
 import UserLogged from './UserLogged'
 
 
-export default function MyAccount() {
+export default function MyAccount(props) {
+
+    const {navigation} = props
+    
 
     const [login, setLogin] = useState(null);
 
+
     useEffect(() => {
         firebase.auth().onAuthStateChanged(user => {
-            !user ? setLogin(false) : setLogin(true);
+            !user ? (setLogin(false),navigation.setParams({hola: false} )) : (setLogin(true), navigation.setParams({hola: true} ));
+            
         })
+
     }, []);
 
 

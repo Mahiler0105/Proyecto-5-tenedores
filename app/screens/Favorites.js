@@ -28,7 +28,6 @@ export default function Favorites(props) {
         user ? setUserLogged(true) : setUserLogged(false)
     })
 
-
     useEffect(() => {
         if (userLogged) {
             setChangeRest(false)
@@ -54,6 +53,8 @@ export default function Favorites(props) {
            
         }
         setReloadRestaurant(false)
+        navigation.setParams({contador: 1} )
+       
     }, [reloadRestaurants])
 
     const getDataRestaurants = idRestaurantArray => {

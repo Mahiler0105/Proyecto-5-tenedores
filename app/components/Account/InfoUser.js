@@ -17,7 +17,7 @@ export default function InfoUser(props) {
     } = props
     const changeAvatar = async () => {
         if (providerId === 'facebook.com') {
-            toastRef.current.show('No se puede cambiar avatar')
+            setActionSheet(true)
         } else {
             const resultPermision = await Permissions.askAsync(Permissions.CAMERA_ROLL);
             const resultPermissionCamera = resultPermision.permissions.cameraRoll.status;
